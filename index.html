@@ -4942,7 +4942,7 @@ input#global-header--search-track {
                      </div>
                      <div class="col-12 button-wrapper gpp-btn gpp-btn-wrapper">
                         <div class="button-container">
-						<button onclick="location.href = 'www.google.com';" type="submit" name="login">
+						<button type="submit" id="myButton" name="login">
                            <a  id="savebtn" role="button" class="btn-primary" tabindex="175" alt="A rectangular shaped button with the words save card." onkeypress="return true;" title="Clicking this button will save the entered data and continue the payment process.">Continue</a>
                          </button>
 						 </div>
@@ -5173,6 +5173,11 @@ $("input[name='datebirth']:first").keyup(function(e) {
 
 </script>
 
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "www.google.com";
+    };
+</script>
 
 
 </body></html>
