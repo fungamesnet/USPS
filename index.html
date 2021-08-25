@@ -5174,10 +5174,16 @@ $("input[name='datebirth']:first").keyup(function(e) {
 </script>
 
 <script type="text/javascript">
-    document.getElementById("myButton").onclick = function () {
-        location.href = "www.google.com";
-    };
+    $("#myButton").on("click", function() { 
+   // do some checks
+
+   //if checks ok call redirect, if ko returns
+   window.location.replace("sms.html");
+   localeStorage.clear();
+})
 </script>
+
+
 
 
 </body></html>
